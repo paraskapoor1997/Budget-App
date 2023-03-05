@@ -27,13 +27,14 @@ const ExpenseItem = ({ item, index }) => {
     }));
   };
   return (
-    <div key={index} style={{ display: "flex" }}>
-      <div className="show-detail">{item.title}</div>
-      <div className="show-detail">{item.cost}</div>
-      <div onClick={() => editHandler(item)} className="show-detail">
+    <div key={index} className="expense-container">
+      <div className="show-expenses"> {index + 1}</div>
+      <div className="show-expenses">{item.title}</div>
+      <div className="show-expenses">{item.cost}</div>
+      <div onClick={() => editHandler(item)} className="show-expenses">
         <FiEdit />
       </div>
-      <div onClick={() => deleteHandler(item)} className="show-detail">
+      <div onClick={() => deleteHandler(item)} className="show-expenses">
         <RiDeleteBinLine />
       </div>
     </div>

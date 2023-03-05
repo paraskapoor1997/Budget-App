@@ -11,6 +11,23 @@ const Budget = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // const postData = async () => {
+    //   const response = await fetch(
+    //     `https://budget-app-a9400-default-rtdb.asia-southeast1.firebasedatabase.app/BudgetApp.json`,
+    //     {
+    //       method: "POST",
+    //       header: { "Content-type": "application/json" },
+    //       body: JSON.stringify({
+    //         total: totalBudgetInput,
+    //         expenses: [],
+    //         totalExpense: 0,
+    //         title: "",
+    //         cost: 0,
+    //       }),
+    //     }
+    //   );
+    // };
+    // postData();
     ctx.setBudgetData((prev) => ({
       ...prev,
       total: totalBudgetInput,
@@ -22,13 +39,18 @@ const Budget = (props) => {
     <div>
       <h2>Budget</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          placeholder="enter total amount"
-          value={totalBudgetInput}
-          type="number"
-          onChange={totalAmountHandler}
-        />
-        <button type="submit"> Set Budget</button>
+        <div>
+          <input
+            placeholder="enter total amount"
+            value={totalBudgetInput}
+            type="number"
+            onChange={totalAmountHandler}
+          />
+        </div>
+        <button style={{ marginTop: "15px" }} type="submit">
+          {" "}
+          Set Budget
+        </button>
       </form>
     </div>
   );

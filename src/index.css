@@ -1,26 +1,68 @@
-.container{
-    display: flex;
-    justify-content:center;
-    height: 40vh;
-    
+body {
+  background-color: cornsilk;
 }
-.container-element{
-    background-color:rgb(243, 231, 231);
-    border: 1px solid rgb(105, 103, 103);
-    width: 100%;
-    text-align: center;
-    
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 40vh;
+  background-color: cornsilk;
+}
+.container-element {
+  background-color: white;
+  border: 1px solid rgb(226, 226, 226);
+  width: 40%;
+  text-align: center;
 }
 
-.show-detail-container{
-    display: flex;
-    justify-content:center;
-    height: 20vh;
-    background-color: rgb(209, 148, 148);
-    
+.show-detail-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  /* background-color: white; */
+  margin-top: 20px;
 }
-.show-detail{
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
+.show-detail {
+  width: 30%;
+  height: 15vh;
+  text-align: center;
+  background-color: white;
+  align-items: center;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.show-detail div {
+  margin-top: 15px;
+  font-size: 18px;
+}
+input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(153, 153, 153);
+  background: none;
+}
+
+button {
+  background-color: rgb(11, 179, 11);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #c47373;
+}
+.expense-container {
+  display: flex;
+}
+
+.show-expenses {
+  width: 30%;
+  height: 5vh;
+  text-align: center;
+  background-color: white;
+  padding-top: 12px;
+  border: 1px solid rgb(226, 226, 226);
 }

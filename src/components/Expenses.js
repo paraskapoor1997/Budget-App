@@ -48,23 +48,25 @@ const Expenses = () => {
     <div>
       <h2>Expenses</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          placeholder="enter title of Product"
-          type="text"
-          value={title}
-          onChange={titleHandler}
-        />
-        <br />
-        <br />
-        <input
-          placeholder="enter cost of a Product"
-          type="number"
-          value={cost}
-          onChange={costHandler}
-        />
-        <br />
-        <br />
-        <button type="submit">Check Amount</button>
+        <div>
+          <input
+            placeholder="enter title of Product"
+            type="text"
+            value={title}
+            onChange={titleHandler}
+          />
+        </div>
+        <div style={{ marginTop: "15px" }}>
+          <input
+            placeholder="enter cost of a Product"
+            type="number"
+            value={cost}
+            onChange={costHandler}
+          />
+        </div>
+        <button style={{ marginTop: "15px" }} type="submit">
+          Check Amount
+        </button>
       </form>
     </div>
   );

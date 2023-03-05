@@ -9,6 +9,7 @@ const Home = () => {
   console.log(ctx);
   return (
     <>
+      <h2>Budget App</h2>
       <div className="container">
         <div className="container-element">
           <Budget />
