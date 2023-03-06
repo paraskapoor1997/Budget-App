@@ -6,7 +6,6 @@ import Expenses from "./Expenses";
 
 const Home = () => {
   const ctx = useContext(BudgetContext);
-  console.log(ctx);
   return (
     <>
       <h2>Budget App</h2>
